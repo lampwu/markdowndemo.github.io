@@ -39,3 +39,8 @@ Here's a sentence with a footnote. [^1]
 I just love **bold text**.
 I just love __bold text__.
 Love**is**bold
+
+
+Italicized text is the *cat's meow*.	
+
+This text is ***really important***.	
