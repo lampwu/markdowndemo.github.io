@@ -62,3 +62,33 @@ This text is ***really important***.
 
 <https://www.markdownguide.org>
 <fake@example.com>
+
+const ExcelJS = require('exceljs');
+const fs = require('fs')
+
+```javascript
+async function a() {
+    const workbook = new ExcelJS.Workbook();
+    const filename = 'D:\\Amomun\\DQE.xlsx';
+    console.log(filename);
+    await workbook.xlsx.readFile(filename)
+        .then(function () {
+            console.log('Hello World')
+            let worksheet = workbook.getWorksheet('My Sheet');
+            var imageId2 = workbook.addImage({
+                filename: 'tek00000.png',
+                extension: 'png',
+              });
+            worksheet.addImage(imageId2, 'B2:D6');
+            /*worksheet.mergeCells('A1:B2');
+            worksheet.getCell('A1').value = 'I am merged';
+            worksheet.getCell('C1').value = 'I am not';
+            worksheet.getCell('C2').value = 'Neither am I';*/
+            //worksheet.getRow(2).commit(); 
+            console.log('Finish')
+        })
+    await workbook.xlsx.writeFile(filename)
+    //await workbook.commit();
+}
+a();
+```
