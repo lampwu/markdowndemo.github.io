@@ -9,3 +9,11 @@
 - Second item
 - Third item
 [markdownguide](https://www.markdownguide.org/cheat-sheet/)
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
