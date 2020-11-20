@@ -22,3 +22,11 @@
 - [ ] Contact the media
 
 ~~The world is flat.~~
+	term
+: definition
+
+### My Great Heading {#custom-id}
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
